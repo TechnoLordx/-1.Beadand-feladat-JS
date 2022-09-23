@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Gameszkó</title>
+</head>
+<body>
+    <div class="cím">
+        <h1>
+            Kő papír olló játék
+        </h1>
+    </div>
+    </div>
+        <div class = "tábla">
+            <div class="pontok">
+                <p>
+                    Győzelmek száma :
+                    <span id="gszam">0</span>
+                </p>
+                <p>
+                    Vesztések száma : 
+                    <span id="vszam">0</span>
+                </p>
+                <p>
+                    Döntetlenek száma :
+                    <span id="dszam">0</span>
+                </p>
+            </div>
+            <div class ="esetek">
+                <button onclick="elemzes('kő')">
+                    <img src="ko.jpg" alt="izmos kövek"  width="200px" height="150px">
+                </button>
+                <button onclick="elemzes('papír')">
+                    <img src="papir.jpg" alt="papír" width="200px" height="150px">
+                </button>
+                <button onclick="elemzes('olló')">
+                    <img src="ollo.jpg" alt="olló"  width="200px" height="150px">
+                </button>
+            </div>
+            <div class = "infók">
+                <p id = "saját_választás"></p>
+                <p id = "gép_választás"></p>
+                <br>
+                <p id = "eredmény" ></p>
+            </div>
+        </div>
+    <script type="text/javascript" src="core.js"></script>
+</body>
+</html>
